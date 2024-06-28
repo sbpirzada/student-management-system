@@ -30,7 +30,8 @@ class Student {
     // Method to pay student's fee
     pay_fee(amount: number) {
         this.balance -= amount;
-        console.log(chalk.bold.cyan(`\n \t${amount} Fee paid successfully for ${this.name}\n`));
+        console.log(chalk.bold.cyan(`\n \t$${amount} Fee paid successfully for ${this.name}`));
+        console.log(chalk.bold.cyan(`Remaining Balance: $${this.balance}\n`));
     }
 
    //Method to display student's status
